@@ -1,0 +1,308 @@
+/*common css start*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type:none;
+}
+
+a{
+    text-decoration:none ;
+} 
+img{
+    display: block;
+} 
+body{
+    /* font-family: 'Abril Fatface', cursive;
+    font-family: 'Open Sans', sans-serif; */
+     font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    width:1270px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*common css end*/
+
+/*header section start*/
+ header .top_bar{
+    background: #0f2f44;
+    color: #fff;
+    font-weight: 16px;
+     padding: 10px 50px;
+    
+}
+header .top_bar .top_bar_left{
+    width:50%;
+    text-align: left;
+}
+header .top_bar .top_bar_right{
+    width:50%;
+    text-align: right;
+}
+header nav .logo{
+    width: 15%;
+    padding-left:20px ;
+
+}
+header nav .menu{
+ width:85%;
+ 
+}
+header nav .menu ul{
+    justify-content: flex-end;
+}
+header nav .menu ul li a{
+    font-size: 16px;
+    font-weight:500;
+    color:#000000;
+    text-transform: capitalize;
+    padding:30px 20px;
+    display:inline-block ;
+    transition: 0.7;
+
+}
+header nav .row{
+    align-items: center;
+
+
+}
+header nav .menu li > i{
+    width:30px;
+    height:30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin:0 10px;
+    cursor: pointers;
+    color:black
+    
+}
+header nav .menu li:hover > a{
+
+    background-color: #fff9e6;
+}
+/*submenu section start*/
+header nav .menu ul li ul{
+    position: absolute;
+    display: none;
+     /* top:100%;
+    left:0; */
+}
+header nav .menu ul li:hover ul{
+    display: block;
+    background-color: #8383bf;
+}
+
+header nav .menu ul li ul li{
+    display: block;
+}
+/*sub menu end*/
+
+/*banner section start*/
+#banner{
+    background-image:url(../img/Bizz_banner.jpg);
+    height: 611px;
+    background-size: cover;
+    background-position:center ; 
+}
+#banner .container .banner_content{
+    height: 100%;
+    /* align-items: flex-start; */
+    justify-content: center;
+    flex-direction: column;
+    margin: 96px;
+    padding-left:50px;
+
+}
+#banner .container .banner_content h2{
+    font-size: 50px;
+    color: #0f2f44;
+    font-weight: 100;
+    transform: uppercase;
+}
+#banner .container .banner_content h1{
+   font-size: 80px;
+   font-weight: 400;
+   color: #0f2f44;
+   line-height: 80%;
+   font-family: 'Abril Fatface', cursive;
+
+}
+#banner .container .banner_content h3{
+  font-size: 32px;
+  font-weight: 100;
+  color: #8484bf;
+  letter-spacing: 15px;
+  padding-bottom:10px ;
+
+}
+#banner .container .banner_content p{
+    font-size: 14px;
+    color: #444444;
+    font-weight: 200;
+    padding: 20px 0;
+}
+#banner .container .banner_content a{
+    font-size: 24px;
+    border:2px solid #8383bf;
+    background-color: #8383bf;
+    color: #fff;
+    padding: 2px;
+    margin: 20px 0;
+}
+#banner .banner_content i{
+    width:40px;
+    height:40px;
+    border: px solid #e0edff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin:0 10px;
+    cursor: pointers;
+    color:#8383bf;
+    background-color:#fff
+}
+#banner .play-icon{
+    display: inline-block;
+    margin: 20px;
+} 
+/*about section start*/
+#about{
+margin-top: 50px;
+}
+#about .container .about_info{
+    width: 50%;
+    padding: 90px;
+}
+#about .container .about_img{
+    width: 50%;
+}
+#about .container .about_info h5{
+    padding: 0 40px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #0f2f44;
+}
+#about .container .about_info h2{
+    padding:0 40px;
+    font-size:32px ;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 200;
+    color:#0f2f44 ;
+}
+#about .container .about_info p{
+    padding: 0 40px;
+    font-size:16px ;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 200;
+    color:#0f2f44;
+    margin-top: 10px;
+}
+#about .container .about_info .p_info{
+    margin-left: 30px;
+    margin-top:30px ;
+    margin-bottom: 30px;
+}
+#about .container .about_info a{
+     padding:8px;
+    font-size:20px;
+    font-weight: 500;
+    color:#0f2f44;
+    border: 0px solid #0f2f44;
+    background-color: #ffc712;
+    text-align: center;
+    box-shadow: 0 0px 2px 0;
+}
+#about .container .about_info .button {
+    padding: 8px;
+    font-size:20px ;
+    font-weight: 500;
+    color:#0f2f44;
+    border: 0px solid #0f2f44;
+    background-color:#ffffff;
+    text-align: center;
+}
+/*about section end*/
+/*skills section start*/
+#skills .container{
+    width: 1000px;
+    margin: auto;
+}
+/*service section start*/
+#service .service-item{
+    width:calc(100% / 3);
+    /* padding: 30px 60px; */
+    padding: 35px;
+    position: relative;
+
+}
+#service .service-item .service-item-icon{
+    width: 25%;
+    background: #e9e9e9;
+}
+#service .service-item .service-item-info{
+    width: 75%;
+    background: #ededed;
+
+}
+#service .service-item .overlay{
+    background: #0f2f44;
+    position: absolute;
+    inset: 35px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+#service .service-item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.7s;
+}
+
+#service .service-item .overlay img{
+    display: inline;
+    padding: 10px;
+}
+/*service section end*/
+
+/*portfolio section start*/
+#portfolio{
+    margin: 50px;
+}
+
+#portfolio .portfolio_item{
+    width: calc(100% / 3);
+    padding: 20px;
+    position: relative;
+}
+#portfolio .portfolio_item img{
+    width: 100%;
+}
+#portfolio .portfolio_item .overlay{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    background: #ffffff;
+
+}
+#portfolio .portfolio_item:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+}
+#portfolio .portfolio_item:hover img{
+    box-shadow: 0 10px 10px 0;
+}
+#testimonial .topbar{
+    margin-right: auto;
+}
